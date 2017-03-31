@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		EBC353D31E8D240B008022A1 /* Crash.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC353D11E8D240B008022A1 /* Crash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBC353DA1E8D241A008022A1 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC353D91E8D241A008022A1 /* Protocol.swift */; };
+		EBC353DE1E8D2472008022A1 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC353DD1E8D2472008022A1 /* Function.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBC353CE1E8D240B008022A1 /* Crash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC353D11E8D240B008022A1 /* Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crash.h; sourceTree = "<group>"; };
 		EBC353D21E8D240B008022A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC353D91E8D241A008022A1 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		EBC353DD1E8D2472008022A1 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				EBC353D11E8D240B008022A1 /* Crash.h */,
+				EBC353D91E8D241A008022A1 /* Protocol.swift */,
+				EBC353DD1E8D2472008022A1 /* Function.swift */,
 				EBC353D21E8D240B008022A1 /* Info.plist */,
 			);
 			path = Crash;
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					EBC353CD1E8D240B008022A1 = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC353DE1E8D2472008022A1 /* Function.swift in Sources */,
+				EBC353DA1E8D241A008022A1 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 		EBC353D71E8D240B008022A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,6 +262,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.Crash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +270,7 @@
 		EBC353D81E8D240B008022A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

@@ -2,8 +2,8 @@
 //  Crash.h
 //  Crash
 //
-//  Created by ST90872 on 2017/03/30.
-//  Copyright © 2017年 tarunon. All rights reserved.
+//  Created by tarunon on 2017/03/30.
+//  Copyright © 2017 tarunon. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
